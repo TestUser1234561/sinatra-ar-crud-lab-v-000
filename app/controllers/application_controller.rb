@@ -53,11 +53,13 @@ class ApplicationController < Sinatra::Base
     erb :view
   end
 
-  get '/posts/:id/delete' do
+  delete '/posts/:id/delete' do
     @id = params[:id]
     @post = Post.find(params[:id])
     @name = @post.name
     @content = @post.content
     erb :edit
   end
+
+  delete
 end
