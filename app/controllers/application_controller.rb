@@ -60,6 +60,4 @@ class ApplicationController < Sinatra::Base
     @content = @post.content
     erb :edit
   end
-
-  delete
 end
