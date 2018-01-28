@@ -57,6 +57,6 @@ class ApplicationController < Sinatra::Base
     @id = params[:id]
     @post = Post.find(params[:id])
     @post.destroy
-    erb :edit
+    erb :delete
   end
 end
