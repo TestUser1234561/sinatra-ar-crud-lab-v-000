@@ -33,4 +33,8 @@ class ApplicationController < Sinatra::Base
     @content = @post.content
     erb :view
   end
+
+  get '/posts/:id/edit' do
+
+  end
 end
