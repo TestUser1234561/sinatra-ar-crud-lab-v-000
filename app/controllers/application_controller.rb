@@ -21,4 +21,8 @@ class ApplicationController < Sinatra::Base
     @content = @post.content
     erb :view
   end
+
+  get '/posts' do
+    @posts = Post.all
+  end
 end
